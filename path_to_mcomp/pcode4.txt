@@ -1,0 +1,59 @@
+h:
+ssp 7
+sep 7
+ujp h_begin
+a:
+ssp 7
+sep 9
+ujp a_begin
+a_begin:
+lda 1 5
+ldc 4
+sto
+lda 0 5
+ind
+ldc 1
+les
+fjp end_if_1
+lda 1 5
+ldc 0
+sto
+end_if_1:
+lda 0 6
+ind
+ldc 1
+equ
+lda 0 5
+ind
+ldc 2
+equ
+or
+fjp else_if_2
+lda 1 6
+ldc 1
+sto
+ujp end_if_2
+else_if_2:
+lda 1 6
+lda 1 5 
+ind
+mst 1
+lda 0 5
+ind
+dec 2
+ldc 6
+cup 2 a
+add
+sto
+end_if_2:
+lda 0 0
+ldc 5
+sto
+retf
+h_begin:
+mst 0
+lda 0 5
+ind
+ldc 2
+cup 2 a
+stp

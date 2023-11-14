@@ -1,0 +1,20 @@
+PROGRAM h
+m FIXED; 
+PROCEDURE a ( x  FIXED IDENTICAL )
+PROCEDURE b (t FIXED , d  a)
+PROCEDURE c (e  a)
+{
+a(t);
+d(x);
+b(t, e);
+c(a);
+}
+{
+   t = 5;
+}
+{
+x = m ;
+}
+{ 
+m=1;
+}

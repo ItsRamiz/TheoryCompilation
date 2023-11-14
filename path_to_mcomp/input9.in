@@ -1,0 +1,14 @@
+PROGRAM h
+      a RECORD
+{
+	b FIXED;
+	c  ^a;
+};
+      PROCEDURE p (x  a, y  a)
+	{
+		p (a, y.c^);
+	}
+{
+  a.b = 3;
+  a.b = a.c^.b ;
+}

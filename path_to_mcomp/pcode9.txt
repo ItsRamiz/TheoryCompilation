@@ -1,0 +1,28 @@
+h:
+ssp 7
+sep 2 
+ujp h_begin
+p:
+ssp 9
+sep 9
+ujp p_begin
+p_begin:
+mst 1
+lda 1 5
+movs 2
+lda 0 7
+inc 1
+ind
+movs 2
+cup 4 p
+retp
+h_begin:
+lda 0 5
+inc 0
+lda 0 5
+inc 1
+ind
+inc 0
+ind
+sto
+stp

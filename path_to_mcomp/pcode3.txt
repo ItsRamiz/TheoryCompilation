@@ -1,0 +1,41 @@
+procedures:
+ssp 7
+sep 7
+ujp procedures_begin
+external:
+ssp 8
+sep 6 
+ujp external_begin
+internal:
+ssp 15
+sep 3
+ujp internal_begin
+internal_begin:
+lda 1 5
+lda 2 5
+ind
+lda 2 6
+ind
+add
+sto
+retp
+external_begin:
+lda 1 5
+lda 0 5
+ind
+sto
+mst 0
+ldc 3
+cup 1 internal
+retp
+procedures_begin:
+lda 0 5
+ldc 9
+sto
+mst 0
+lda 0 5
+ind
+inc 1
+ldc 2
+cup 2 external
+stp

@@ -1,0 +1,25 @@
+PROGRAM h 
+l FIXED;
+PROCEDURE p ( a FIXED IDENTICAL)
+PROCEDURE m ( n FIXED IDENTICAL)
+{
+n = 5 ;
+}
+PROCEDURE k (x  p, z FIXED)
+PROCEDURE d (y FIXED)
+{
+ y =1;
+}
+{
+p (z);
+d (a);
+x (a);
+k (x, z);
+k (p, a);
+}
+{
+a = a*3;
+}
+{
+l = 5;
+}

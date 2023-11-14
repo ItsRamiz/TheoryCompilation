@@ -1,0 +1,22 @@
+PROGRAM h
+	  i FIXED;
+	  j  FIXED;
+
+	FUNCTION a(  n FIXED, m FIXED) : FIXED
+	{
+	
+		i=4;
+		IF (n < 1) THEN
+			i = 0;
+		FI
+		
+		IF ((m == 1) | (n == 2)) THEN
+			j = 1;
+		ELSE
+			j =i+a(n-2,6);
+		FI
+             a = 5 ;
+	}		
+{
+	a(i,2);
+}

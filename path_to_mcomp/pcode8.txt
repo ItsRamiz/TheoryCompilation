@@ -1,0 +1,73 @@
+h:
+ssp 100
+sep 50
+ujp h_begin
+p:
+ssp 100
+sep 50
+ujp p_begin
+m:
+ssp 100
+sep 50
+ujp m_begin
+m_begin:
+lda 0 5
+ind
+ldc 5
+sto
+k:
+ssp 100
+sep 50
+ujp k_begin
+d:
+ssp 100
+sep 50
+ujp d_begin
+d_begin:
+lda 0 5
+ldc 1
+sto
+retp
+k_begin:
+mst 2
+lda 0 7
+cup 1 p
+mst 0
+lda 1 5
+ind
+ind
+cup 1 d
+mstf 0 5
+lda 1 5
+ind
+smp 1
+cupi 0 5
+mst 1
+lda 0 5
+movs 2
+lda 0 7
+ind
+cup 3 k
+mst 1
+ldc p
+lda 2 0
+lda 1 5
+ind
+ind
+cup 3 k
+retp
+p_begin:
+lda 0 5
+ind
+lda 0 5
+ind
+ind
+ldc 3
+mul
+sto
+retp 
+h_begin:
+lda 0 5
+ldc 5
+sto
+stp

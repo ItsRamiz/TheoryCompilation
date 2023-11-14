@@ -1,0 +1,12 @@
+PROGRAM while1
+	x FIXED;
+	y FIXED;
+{
+	x= -5;
+	y= x*x;
+	WHILE(x<=0)
+	{
+		x=x+1;
+                       break ;
+	}
+}

@@ -1,0 +1,53 @@
+h:
+ssp 6
+sep 2
+ujp h_begin
+a:
+ssp 6
+sep 2
+ujp a_begin
+b:
+ssp 8
+sep 2
+ujp b_begin
+c:
+ssp 7 
+sep 8
+ujp c_begin
+c_begin:
+mst 3
+lda 1 5
+cup 1 a
+mstf 1 6
+lda 2 5
+ind
+smp 1
+cupi 1 6
+mst 2
+lda 1 5
+ind
+lda 0 5
+movs 2
+cup 3 b
+mst 1
+ldc a
+lda 3 0
+cup 2 c
+retp
+b_begin:
+lda 0 5
+ldc 5
+sto 
+retp
+a_begin:
+lda 0 5
+ind
+lda 1 5
+ind
+sto
+retp
+h_begin:
+lda 0 5
+ldc 1
+sto 
+stp

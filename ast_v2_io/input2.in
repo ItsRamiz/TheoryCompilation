@@ -1,0 +1,10 @@
+PROGRAM H
+	a ARRAY[3:9] OF FIXED;
+	b ARRAY[1:4] OF a;
+	c ARRAY[3:9] OF ARRAY[1:4] OF a;
+	x FIXED;
+	y FIXED;
+{
+	y=3;
+	c[5][3][4]=6;
+}

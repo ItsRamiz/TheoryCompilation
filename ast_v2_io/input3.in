@@ -1,0 +1,18 @@
+PROGRAM H
+s ARRAY[1:6] OF FIXED; 
+rec RECORD{
+	a FIXED;
+	b FIXED;
+	c ARRAY[2:8] OF s;
+	};
+aaa RECORD {
+	x FIXED;
+	y rec;
+	z FIXED;
+	};
+{
+	aaa.x=33;
+	aaa.y.c[4]=5;
+	aaa.z=22;
+	
+}

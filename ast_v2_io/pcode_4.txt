@@ -1,0 +1,11 @@
+ldc 63
+ldc 2
+ixa 3
+dec 3
+inc 2
+ldc 5
+sto
+ldc 5
+inc 1
+ldc 6
+sto

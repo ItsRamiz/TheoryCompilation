@@ -1,0 +1,16 @@
+ldc 55
+inc 0
+ldc 33
+sto
+ldc 55
+inc 1
+inc 2
+ldc 4
+ixa 6
+dec 12
+ldc 5
+sto
+ldc 55
+inc 45
+ldc 22
+sto

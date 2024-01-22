@@ -1,0 +1,22 @@
+ldc 33
+ldc 26
+new
+ldc 33
+ind
+inc 1
+ldc 26
+new
+ldc 33
+ind
+inc 1
+ind
+inc 2
+ldc 1
+ixa 12
+ldc 2
+ixa 4
+ldc 3
+ixa 1
+dec 17
+ldc 1
+sto

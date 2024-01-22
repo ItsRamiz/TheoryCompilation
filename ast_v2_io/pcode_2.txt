@@ -1,0 +1,14 @@
+ldc 237
+ldc 3
+sto
+ldc 40
+ldc 5
+ixa 28
+ldc 3
+ixa 7
+dec 91
+ldc 4
+ixa 1
+dec 3
+ldc 6
+sto

@@ -1,0 +1,18 @@
+PROGRAM procedures
+	a FIXED;
+	x FIXED;
+	PROCEDURE external (b FIXED, c FIXED)
+		d FIXED;
+		PROCEDURE internal (n FIXED)
+			s ARRAY[1:9] OF FIXED;
+			{
+				b=a+x;
+			}
+	{
+		a=b;
+		internal(3);	
+	}
+{
+	a=9;
+	external(a+1,2);
+}

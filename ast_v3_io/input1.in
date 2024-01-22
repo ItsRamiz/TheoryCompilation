@@ -1,0 +1,9 @@
+PROGRAM h
+     a  FIXED;
+     PROCEDURE f ( m FIXED IDENTICAL, x  FIXED)	{
+	 m = m * 2;
+ 	 a = x - m;
+      }
+{
+      f(a, a);
+}

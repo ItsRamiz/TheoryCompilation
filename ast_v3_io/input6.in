@@ -1,0 +1,12 @@
+PROGRAM h
+	x FIXED;
+	FUNCTION f (m FIXED) : FIXED
+		 y FIXED;
+	{
+		x=13;
+ 		y = x - 5;
+              f=m*19;
+	}
+{
+	x=f (4);
+}

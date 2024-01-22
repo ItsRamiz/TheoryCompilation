@@ -1,0 +1,31 @@
+h:
+ssp 6
+sep 7
+ujp h_begin
+f:
+ssp 7
+sep 3
+ujp f_begin
+f_begin:
+lda 1 5
+ldc 13
+sto
+lda 0 6
+lda 1 5
+ind
+dec 5
+sto
+lda 0 0
+lda 0 5
+ind
+ldc 19
+mul
+sto
+retf
+h_begin:
+lda 0 5
+mst 0
+ldc 4
+cup 1 f
+sto
+stp

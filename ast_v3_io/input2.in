@@ -1,0 +1,13 @@
+PROGRAM h
+	x FIXED;
+	y FIXED;
+	PROCEDURE f ( z FIXED)
+		
+	{
+		z = y;
+		WRITE (z);
+ 		y = x - z;
+	}
+{
+	f (x);
+}
